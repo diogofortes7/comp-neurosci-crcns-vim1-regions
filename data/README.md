@@ -1,7 +1,6 @@
-#All data for the project is contained within the 'EstimatedResponses.mat' and 'Stimuli.mat' files. The following functions may be used to input the data into Python
+# All data for the project is contained within the 'EstimatedResponses.mat' and 'Stimuli.mat' files. The following functions may be used to input the data into Python
 
-# Open specific task (Trn/Val), subject, and region, with input requested from the user. Returns a Dataframe where columns
-# correspond to each voxel in a cortical region, and rows correspond to each stimulus image
+# Open specific task (Trn/Val), subject, and region, with input requested from the user. Returns a Dataframe where columns correspond to each voxel in a cortical region, and rows correspond to each stimulus image
 
 def get_response_input():
     f = tables.open_file('EstimatedResponses.mat')
@@ -29,8 +28,7 @@ def get_response_input():
     resp = pd.DataFrame(resp)
     return resp
     
-# Open specific task (Trn/Val), subject, and region, with input specified. Returns a Dataframe where columns
-# correspond to each voxel in a cortical region, and rows correspond to each stimulus image
+# Open specific task (Trn/Val), subject, and region, with input specified. Returns a Dataframe where columns correspond to each voxel in a cortical region, and rows correspond to each stimulus image
 def get_response_task_subj_reg(task,subj,region):
     f = tables.open_file('EstimatedResponses.mat')
     f.list_nodes
@@ -50,8 +48,7 @@ def get_response_task_subj_reg(task,subj,region):
     resp = pd.DataFrame(resp)
     return resp
     
-# Get groups of responses. Edit the fields in the loops to parse different groups. Final output is a dictionary of 
-# DataFrames
+# Get groups of responses. Edit the fields in the loops to parse different groups. Final output is a dictionary of  DataFrames
 responses={}
 for task in ['Trn','Val']:
     for subj in [1,2]:
