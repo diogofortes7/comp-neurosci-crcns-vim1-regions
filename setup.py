@@ -11,8 +11,8 @@ if sys.hexversion < 0x02070000:
 setup(
     name="comp-neurosci-skeleton",
     version="0.0.1",
-    package_dir={'comp-neurosci-skeleton': 'src'},
-    packages=["comp-neurosci-skeleton"],
+    package_dir={'comp-neurosci-crcns-vim1-regions': 'src'},
+    packages=["comp-neurosci-crcns-vim1-regions"],
 
     description="",
     long_description="",
@@ -20,6 +20,7 @@ setup(
         "numpy>=1.10",
     ],
 
-    author="Your Name Here",
-    maintainer='Your Name Here',
+    author="Diogo Fortes",
+    maintainer='Diogo Fortes',
 )
+
