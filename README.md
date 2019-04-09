@@ -1,5 +1,5 @@
 
-# Computational Neuroscience Project Skeleton
+# Computational Neuroscience Project: Discrete Visual Region Decoding Models
 
 This repository is a skeleton Python package that students in PSYC 5270 can use to get started on their data exploration assignments.
 
