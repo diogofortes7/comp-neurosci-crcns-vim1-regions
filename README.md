@@ -1,47 +1,9 @@
 
 # Computational Neuroscience Project: Discrete Visual Region Decoding Models
 
-This repository is a skeleton Python package that students in PSYC 5270 can use to get started on their data exploration assignments.
+# Background
+One of the most prominent endeavors of modern cognitive and computational neuroscience is the search for a neural sensory code, a statistical model of how the brain represent sensory information. The derivation of such a model holds benefits not only to our understanding of neural computation, but also prosthetic development for sensory-impaired individuals. In the visual system, Bayesian decoding models of visual cortex activity have been proposed for natural image processing (Kay, Naselaris, Prenger, & Gallant, 2008). This latter model predicted individual voxel responses across V1, V2, and V3, and then used that pattern of activity to identify the stimulus image – with no regard to information flow across visual areas. Understanding this information flow, both computationally and structurally, may improve the accuracy algorithms for image classification and reconstruction, and provide insight into how visual encoding is distributed along the human visual cortex.
 
-## Getting started
+# Aim and Hypothesis
 
-Start by cloning the repository: `git clone https://github.com/melizalab/comp-neurosci-skeleton.git`
-
-This will create a new directory, `comp-neurosci-skeleton`, containing the following items:
-
-- `README.md`: this file
-- `setup.py`:  package description file. You will need to edit this.
-- `requirements.txt`: a list of packages your code depends on
-- `.gitignore`: a list of files git will ignore when telling you what's changed
-- `src`:       a directory where you will put your python code
-- `test`:      a directory where you will put test code
-- `data`:      a directory where your data will live
-- `build`:     a directory where processed output from your analysis will live
-
-Choose a new name for your package. Rename the top-level directory (`comp-neurosci-skeleton`) and edit `setup.py` to set the new name and other identifying information.
-
-Now you need to create a github repository of your own. Go to [https://github.com/new](https://github.com/new). Give the repository your chosen name and a description, then click Create Repository. Make a note of the address of your repository. It will look something like `https://github.com/dmeliza/dummy.git`
-
-Finally, set your local directory to track the github repository by running the following commands in your working directory. Replace the repository address in the code below with the one for your project.
-
-``` shell
-git remote rm origin
-git remote add origin https://github.com/dmeliza/dummy.git
-git push -u origin master
-```
-
-## Next steps
-
-Edit `data/README.md` to describe how to retrieve data. Better yet, write a script.
-
-Edit `requirements.txt` to add any needed dependencies, then create a virtual environment and install the dependencies as follows:
-
-``` shell
-python3 -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
-```
-
-Install the project in development mode by running `python setup.py develop`. If you use notebooks, this will ensure that you can access your modules.
-
-Edit this file to describe your actual project.
+For a set of natural images, I am interested in establishing clusters of voxels in each visual region that are maximally predictive of a given category of natural image, followed by probing correlations between activity of maximally predictive clusters across areas. I am also interested in examining rough spatial connections between these clusters by examining associations across 3D coordinates. I hypothesize that associations across more similar semantic categories would also be more similar both in terms of strength and spatial localization.
