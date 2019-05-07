@@ -7,3 +7,11 @@ One of the most prominent endeavors of modern cognitive and computational neuros
 # Aim and Hypothesis
 
 For a set of natural images, I am interested in establishing clusters of voxels in each visual region that are maximally predictive of a given category of natural image, followed by probing correlations between activity of maximally predictive clusters across areas. I am also interested in examining rough spatial connections between these clusters by examining associations across 3D coordinates. I hypothesize that associations across more similar semantic categories would also be more similar both in terms of strength and spatial localization.
+
+# Data
+
+To access the data use din this project, please consult the readme file in the data folder of this repository
+
+# Analysis
+
+The annotated analysis script for this project is vim1_regions_rf_analysis_dg4hd.py
